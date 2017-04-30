@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* iTerrainAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* iTerrainAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2514C27310084DB100A42282 /* ES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2514C27010084DB100A42282 /* ES2Renderer.m */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */; };
+		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		BD12EA8111B030390081DED2 /* SkyBox.m in Sources */ = {isa = PBXBuildFile; fileRef = BD12EA8011B030390081DED2 /* SkyBox.m */; };
+		BD12EABE11B035230081DED2 /* skyBox-0.png in Resources */ = {isa = PBXBuildFile; fileRef = BD12EAB911B035230081DED2 /* skyBox-0.png */; };
+		BD12EABF11B035230081DED2 /* skyBox-1.png in Resources */ = {isa = PBXBuildFile; fileRef = BD12EABA11B035230081DED2 /* skyBox-1.png */; };
+		BD12EAC011B035230081DED2 /* skyBox-2.png in Resources */ = {isa = PBXBuildFile; fileRef = BD12EABB11B035230081DED2 /* skyBox-2.png */; };
+		BD12EAC111B035230081DED2 /* skyBox-3.png in Resources */ = {isa = PBXBuildFile; fileRef = BD12EABC11B035230081DED2 /* skyBox-3.png */; };
+		BD12EAC211B035230081DED2 /* skyBox-4.png in Resources */ = {isa = PBXBuildFile; fileRef = BD12EABD11B035230081DED2 /* skyBox-4.png */; };
+		BD16C7A511ACE5E000ECD48F /* Water.m in Sources */ = {isa = PBXBuildFile; fileRef = BD16C7A411ACE5E000ECD48F /* Water.m */; };
+		BD16C7DD11ACE96000ECD48F /* Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = BD16C7DC11ACE96000ECD48F /* Texture.m */; };
+		BD16E23011ACD79600017FF1 /* terrain.fsh in Sources */ = {isa = PBXBuildFile; fileRef = BD16E22C11ACD79600017FF1 /* terrain.fsh */; };
+		BD16E23111ACD79600017FF1 /* terrain.vsh in Sources */ = {isa = PBXBuildFile; fileRef = BD16E22D11ACD79600017FF1 /* terrain.vsh */; };
+		BD16E23211ACD79600017FF1 /* texMapper.fsh in Sources */ = {isa = PBXBuildFile; fileRef = BD16E22E11ACD79600017FF1 /* texMapper.fsh */; };
+		BD16E23311ACD79600017FF1 /* texMapper.vsh in Sources */ = {isa = PBXBuildFile; fileRef = BD16E22F11ACD79600017FF1 /* texMapper.vsh */; };
+		BD16E23E11ACD7AC00017FF1 /* terrain.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BD16E22C11ACD79600017FF1 /* terrain.fsh */; };
+		BD16E23F11ACD7AC00017FF1 /* terrain.vsh in Resources */ = {isa = PBXBuildFile; fileRef = BD16E22D11ACD79600017FF1 /* terrain.vsh */; };
+		BD16E24011ACD7AC00017FF1 /* texMapper.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BD16E22E11ACD79600017FF1 /* texMapper.fsh */; };
+		BD16E24111ACD7AC00017FF1 /* texMapper.vsh in Resources */ = {isa = PBXBuildFile; fileRef = BD16E22F11ACD79600017FF1 /* texMapper.vsh */; };
+		BD1EF94811A90DF900A0B9AB /* detail.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1EF94711A90DF900A0B9AB /* detail.png */; };
+		BD30DCFD11A480FD00AD7051 /* esTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = BD30DCFC11A480FD00AD7051 /* esTransform.m */; };
+		BD30E06011A5A3D000AD7051 /* Terrain.m in Sources */ = {isa = PBXBuildFile; fileRef = BD30E05F11A5A3D000AD7051 /* Terrain.m */; };
+		BD30E3EA11A64F4F00AD7051 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD30E3E911A64F4F00AD7051 /* CoreGraphics.framework */; };
+		BD333ECC11B47B2800389814 /* island-heightmap.png in Resources */ = {isa = PBXBuildFile; fileRef = BD333ECA11B47B2800389814 /* island-heightmap.png */; };
+		BD333ECD11B47B2800389814 /* island-terrain.png in Resources */ = {isa = PBXBuildFile; fileRef = BD333ECB11B47B2800389814 /* island-terrain.png */; };
+		BD333EFF11B47E2400389814 /* volcano-heightmap.png in Resources */ = {isa = PBXBuildFile; fileRef = BD333EFD11B47E2400389814 /* volcano-heightmap.png */; };
+		BD333F0011B47E2400389814 /* volcano-terrain.png in Resources */ = {isa = PBXBuildFile; fileRef = BD333EFE11B47E2400389814 /* volcano-terrain.png */; };
+		BD5A411C13278A680077D299 /* about-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5A411A13278A680077D299 /* about-normal.png */; };
+		BD5A411D13278A680077D299 /* about-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5A411B13278A680077D299 /* about-pressed.png */; };
+		BD7F179511B44FCE0046DF9B /* TerrainTemplatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7F179411B44FCE0046DF9B /* TerrainTemplatePickerController.m */; };
+		BD7F182711B45D1F0046DF9B /* classic-heightmap.png in Resources */ = {isa = PBXBuildFile; fileRef = BD7F182511B45D1F0046DF9B /* classic-heightmap.png */; };
+		BD7F182811B45D1F0046DF9B /* classic-terrain.png in Resources */ = {isa = PBXBuildFile; fileRef = BD7F182611B45D1F0046DF9B /* classic-terrain.png */; };
+		BD7F62B911B010EE003507BA /* Program.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7F62B811B010EE003507BA /* Program.m */; };
+		BD7F63BB11B0290B003507BA /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = BD7F63BA11B0290B003507BA /* water.png */; };
+		BDAA4F81171AB9B100AFE2D5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDAA4F80171AB9B100AFE2D5 /* Default-568h@2x.png */; };
+		BDB691A511A8BAB7008B0DE9 /* EAGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB691A411A8BAB7008B0DE9 /* EAGLViewController.m */; };
+		BDF9E7AF132793550033DEF7 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = BDF9E7AC132793550033DEF7 /* Icon-72.png */; };
+		BDF9E7B0132793550033DEF7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BDF9E7AD132793550033DEF7 /* Icon.png */; };
+		BDF9E7B1132793550033DEF7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDF9E7AE132793550033DEF7 /* Icon@2x.png */; };
+		BDF9E7B4132794FF0033DEF7 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = BDF9E7B2132794FF0033DEF7 /* Default-Landscape.png */; };
+		BDF9E7B5132794FF0033DEF7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BDF9E7B3132794FF0033DEF7 /* Default.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* iTerrainAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTerrainAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* iTerrainAppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = iTerrainAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Terrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2514C26F10084DB100A42282 /* ES2Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES2Renderer.h; sourceTree = "<group>"; };
+		2514C27010084DB100A42282 /* ES2Renderer.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = ES2Renderer.m; sourceTree = "<group>"; };
+		2514C27110084DB100A42282 /* ESRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRenderer.h; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28FD14FC0DC6FC130079059D /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		28FD14FD0DC6FC130079059D /* EAGLView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = EAGLView.m; sourceTree = "<group>"; };
+		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* iTerrain-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iTerrain-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		BD12EA7F11B030390081DED2 /* SkyBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkyBox.h; path = ../iterrain/Classes/SkyBox.h; sourceTree = SOURCE_ROOT; };
+		BD12EA8011B030390081DED2 /* SkyBox.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = SkyBox.m; path = ../iterrain/Classes/SkyBox.m; sourceTree = SOURCE_ROOT; };
+		BD12EAB911B035230081DED2 /* skyBox-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skyBox-0.png"; path = "../iterrain/Resources/skyBox-0.png"; sourceTree = SOURCE_ROOT; };
+		BD12EABA11B035230081DED2 /* skyBox-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skyBox-1.png"; path = "../iterrain/Resources/skyBox-1.png"; sourceTree = SOURCE_ROOT; };
+		BD12EABB11B035230081DED2 /* skyBox-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skyBox-2.png"; path = "../iterrain/Resources/skyBox-2.png"; sourceTree = SOURCE_ROOT; };
+		BD12EABC11B035230081DED2 /* skyBox-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skyBox-3.png"; path = "../iterrain/Resources/skyBox-3.png"; sourceTree = SOURCE_ROOT; };
+		BD12EABD11B035230081DED2 /* skyBox-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skyBox-4.png"; path = "../iterrain/Resources/skyBox-4.png"; sourceTree = SOURCE_ROOT; };
+		BD16C7A311ACE5E000ECD48F /* Water.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Water.h; path = ../iterrain/Classes/Water.h; sourceTree = SOURCE_ROOT; };
+		BD16C7A411ACE5E000ECD48F /* Water.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = Water.m; path = ../iterrain/Classes/Water.m; sourceTree = SOURCE_ROOT; };
+		BD16C7A711ACE68900ECD48F /* defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		BD16C7DB11ACE96000ECD48F /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		BD16C7DC11ACE96000ECD48F /* Texture.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Texture.m; sourceTree = "<group>"; };
+		BD16E22C11ACD79600017FF1 /* terrain.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = terrain.fsh; path = ../iterrain/Shaders/terrain.fsh; sourceTree = SOURCE_ROOT; };
+		BD16E22D11ACD79600017FF1 /* terrain.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = terrain.vsh; path = ../iterrain/Shaders/terrain.vsh; sourceTree = SOURCE_ROOT; };
+		BD16E22E11ACD79600017FF1 /* texMapper.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = texMapper.fsh; path = ../iterrain/Shaders/texMapper.fsh; sourceTree = SOURCE_ROOT; };
+		BD16E22F11ACD79600017FF1 /* texMapper.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = texMapper.vsh; path = ../iterrain/Shaders/texMapper.vsh; sourceTree = SOURCE_ROOT; };
+		BD1EF94711A90DF900A0B9AB /* detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = detail.png; path = ../iterrain/Resources/detail.png; sourceTree = SOURCE_ROOT; };
+		BD30DCFB11A480FD00AD7051 /* esTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esTransform.h; sourceTree = "<group>"; };
+		BD30DCFC11A480FD00AD7051 /* esTransform.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = esTransform.m; sourceTree = "<group>"; };
+		BD30E05E11A5A3D000AD7051 /* Terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terrain.h; sourceTree = "<group>"; };
+		BD30E05F11A5A3D000AD7051 /* Terrain.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Terrain.m; sourceTree = "<group>"; };
+		BD30E3E911A64F4F00AD7051 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BD333ECA11B47B2800389814 /* island-heightmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "island-heightmap.png"; sourceTree = "<group>"; };
+		BD333ECB11B47B2800389814 /* island-terrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "island-terrain.png"; sourceTree = "<group>"; };
+		BD333EFD11B47E2400389814 /* volcano-heightmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volcano-heightmap.png"; sourceTree = "<group>"; };
+		BD333EFE11B47E2400389814 /* volcano-terrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volcano-terrain.png"; sourceTree = "<group>"; };
+		BD5A411A13278A680077D299 /* about-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-normal.png"; sourceTree = "<group>"; };
+		BD5A411B13278A680077D299 /* about-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-pressed.png"; sourceTree = "<group>"; };
+		BD7F179311B44FCE0046DF9B /* TerrainTemplatePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerrainTemplatePickerController.h; sourceTree = "<group>"; };
+		BD7F179411B44FCE0046DF9B /* TerrainTemplatePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerrainTemplatePickerController.m; sourceTree = "<group>"; };
+		BD7F182511B45D1F0046DF9B /* classic-heightmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classic-heightmap.png"; sourceTree = "<group>"; };
+		BD7F182611B45D1F0046DF9B /* classic-terrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classic-terrain.png"; sourceTree = "<group>"; };
+		BD7F62B711B010EE003507BA /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Program.h; path = ../iterrain/Classes/Program.h; sourceTree = SOURCE_ROOT; };
+		BD7F62B811B010EE003507BA /* Program.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = Program.m; path = ../iterrain/Classes/Program.m; sourceTree = SOURCE_ROOT; };
+		BD7F63BA11B0290B003507BA /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = water.png; path = ../iterrain/Resources/water.png; sourceTree = SOURCE_ROOT; };
+		BDAA4F80171AB9B100AFE2D5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BDB691A311A8BAB7008B0DE9 /* EAGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLViewController.h; sourceTree = "<group>"; };
+		BDB691A411A8BAB7008B0DE9 /* EAGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLViewController.m; sourceTree = "<group>"; };
+		BDF9E7AC132793550033DEF7 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "icons/Icon-72.png"; sourceTree = "<group>"; };
+		BDF9E7AD132793550033DEF7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = icons/Icon.png; sourceTree = "<group>"; };
+		BDF9E7AE132793550033DEF7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "icons/Icon@2x.png"; sourceTree = "<group>"; };
+		BDF9E7B2132794FF0033DEF7 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "icons/Default-Landscape.png"; sourceTree = "<group>"; };
+		BDF9E7B3132794FF0033DEF7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = icons/Default.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
+				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
+				BD30E3EA11A64F4F00AD7051 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BD7F179811B44FFF0046DF9B /* ViewControllers */,
+				BD7F179711B44FD70046DF9B /* Rendering */,
+				2514C26F10084DB100A42282 /* ES2Renderer.h */,
+				2514C27010084DB100A42282 /* ES2Renderer.m */,
+				2514C27110084DB100A42282 /* ESRenderer.h */,
+				28FD14FC0DC6FC130079059D /* EAGLView.h */,
+				28FD14FD0DC6FC130079059D /* EAGLView.m */,
+				1D3623240D0F684500981E51 /* iTerrainAppDelegate.h */,
+				1D3623250D0F684500981E51 /* iTerrainAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Terrain.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2514C27610084DB600A42282 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				BD16E22C11ACD79600017FF1 /* terrain.fsh */,
+				BD16E22D11ACD79600017FF1 /* terrain.vsh */,
+				BD16E22E11ACD79600017FF1 /* texMapper.fsh */,
+				BD16E22F11ACD79600017FF1 /* texMapper.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				BDAA4F80171AB9B100AFE2D5 /* Default-568h@2x.png */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				2514C27610084DB600A42282 /* Shaders */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDF9E7A9132791CC0033DEF7 /* icons */,
+				BD5A411A13278A680077D299 /* about-normal.png */,
+				BD5A411B13278A680077D299 /* about-pressed.png */,
+				BD7F180B11B45C9C0046DF9B /* terrains */,
+				BD12EAB911B035230081DED2 /* skyBox-0.png */,
+				BD12EABA11B035230081DED2 /* skyBox-1.png */,
+				BD12EABB11B035230081DED2 /* skyBox-2.png */,
+				BD12EABC11B035230081DED2 /* skyBox-3.png */,
+				BD12EABD11B035230081DED2 /* skyBox-4.png */,
+				BD7F63BA11B0290B003507BA /* water.png */,
+				BD1EF94711A90DF900A0B9AB /* detail.png */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* iTerrain-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD30E3E911A64F4F00AD7051 /* CoreGraphics.framework */,
+				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD333EC911B47B2800389814 /* island */ = {
+			isa = PBXGroup;
+			children = (
+				BD333ECA11B47B2800389814 /* island-heightmap.png */,
+				BD333ECB11B47B2800389814 /* island-terrain.png */,
+			);
+			path = island;
+			sourceTree = "<group>";
+		};
+		BD333EFC11B47E2400389814 /* volcano */ = {
+			isa = PBXGroup;
+			children = (
+				BD333EFD11B47E2400389814 /* volcano-heightmap.png */,
+				BD333EFE11B47E2400389814 /* volcano-terrain.png */,
+			);
+			path = volcano;
+			sourceTree = "<group>";
+		};
+		BD7F179711B44FD70046DF9B /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				BD16C7A711ACE68900ECD48F /* defs.h */,
+				BD16C7DB11ACE96000ECD48F /* Texture.h */,
+				BD16C7DC11ACE96000ECD48F /* Texture.m */,
+				BD12EA7F11B030390081DED2 /* SkyBox.h */,
+				BD12EA8011B030390081DED2 /* SkyBox.m */,
+				BD7F62B711B010EE003507BA /* Program.h */,
+				BD7F62B811B010EE003507BA /* Program.m */,
+				BD16C7A311ACE5E000ECD48F /* Water.h */,
+				BD16C7A411ACE5E000ECD48F /* Water.m */,
+				BD30E05E11A5A3D000AD7051 /* Terrain.h */,
+				BD30E05F11A5A3D000AD7051 /* Terrain.m */,
+				BD30DCFB11A480FD00AD7051 /* esTransform.h */,
+				BD30DCFC11A480FD00AD7051 /* esTransform.m */,
+			);
+			name = Rendering;
+			sourceTree = "<group>";
+		};
+		BD7F179811B44FFF0046DF9B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD7F179311B44FCE0046DF9B /* TerrainTemplatePickerController.h */,
+				BD7F179411B44FCE0046DF9B /* TerrainTemplatePickerController.m */,
+				BDB691A311A8BAB7008B0DE9 /* EAGLViewController.h */,
+				BDB691A411A8BAB7008B0DE9 /* EAGLViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BD7F180B11B45C9C0046DF9B /* terrains */ = {
+			isa = PBXGroup;
+			children = (
+				BD333EFC11B47E2400389814 /* volcano */,
+				BD333EC911B47B2800389814 /* island */,
+				BD7F180C11B45C9C0046DF9B /* classic */,
+			);
+			name = terrains;
+			path = ../iterrain/Resources/terrains;
+			sourceTree = SOURCE_ROOT;
+		};
+		BD7F180C11B45C9C0046DF9B /* classic */ = {
+			isa = PBXGroup;
+			children = (
+				BD7F182511B45D1F0046DF9B /* classic-heightmap.png */,
+				BD7F182611B45D1F0046DF9B /* classic-terrain.png */,
+			);
+			path = classic;
+			sourceTree = "<group>";
+		};
+		BDF9E7A9132791CC0033DEF7 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				BDF9E7B2132794FF0033DEF7 /* Default-Landscape.png */,
+				BDF9E7B3132794FF0033DEF7 /* Default.png */,
+				BDF9E7AC132793550033DEF7 /* Icon-72.png */,
+				BDF9E7AD132793550033DEF7 /* Icon.png */,
+				BDF9E7AE132793550033DEF7 /* Icon@2x.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* iTerrain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iTerrain" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTerrain;
+			productName = iTerrain;
+			productReference = 1D6058910D05DD3D006BFB54 /* Terrain.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iTerrain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* iTerrain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD16E23E11ACD7AC00017FF1 /* terrain.fsh in Resources */,
+				BD16E23F11ACD7AC00017FF1 /* terrain.vsh in Resources */,
+				BD16E24011ACD7AC00017FF1 /* texMapper.fsh in Resources */,
+				BD16E24111ACD7AC00017FF1 /* texMapper.vsh in Resources */,
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				BD1EF94811A90DF900A0B9AB /* detail.png in Resources */,
+				BD7F63BB11B0290B003507BA /* water.png in Resources */,
+				BD12EABE11B035230081DED2 /* skyBox-0.png in Resources */,
+				BD12EABF11B035230081DED2 /* skyBox-1.png in Resources */,
+				BD12EAC011B035230081DED2 /* skyBox-2.png in Resources */,
+				BD12EAC111B035230081DED2 /* skyBox-3.png in Resources */,
+				BD12EAC211B035230081DED2 /* skyBox-4.png in Resources */,
+				BD7F182711B45D1F0046DF9B /* classic-heightmap.png in Resources */,
+				BD7F182811B45D1F0046DF9B /* classic-terrain.png in Resources */,
+				BD333ECC11B47B2800389814 /* island-heightmap.png in Resources */,
+				BD333ECD11B47B2800389814 /* island-terrain.png in Resources */,
+				BD333EFF11B47E2400389814 /* volcano-heightmap.png in Resources */,
+				BD333F0011B47E2400389814 /* volcano-terrain.png in Resources */,
+				BD5A411C13278A680077D299 /* about-normal.png in Resources */,
+				BD5A411D13278A680077D299 /* about-pressed.png in Resources */,
+				BDF9E7AF132793550033DEF7 /* Icon-72.png in Resources */,
+				BDF9E7B0132793550033DEF7 /* Icon.png in Resources */,
+				BDF9E7B1132793550033DEF7 /* Icon@2x.png in Resources */,
+				BDF9E7B4132794FF0033DEF7 /* Default-Landscape.png in Resources */,
+				BDF9E7B5132794FF0033DEF7 /* Default.png in Resources */,
+				BDAA4F81171AB9B100AFE2D5 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* iTerrainAppDelegate.m in Sources */,
+				28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */,
+				2514C27310084DB100A42282 /* ES2Renderer.m in Sources */,
+				BD30DCFD11A480FD00AD7051 /* esTransform.m in Sources */,
+				BD30E06011A5A3D000AD7051 /* Terrain.m in Sources */,
+				BDB691A511A8BAB7008B0DE9 /* EAGLViewController.m in Sources */,
+				BD16E23011ACD79600017FF1 /* terrain.fsh in Sources */,
+				BD16E23111ACD79600017FF1 /* terrain.vsh in Sources */,
+				BD16E23211ACD79600017FF1 /* texMapper.fsh in Sources */,
+				BD16E23311ACD79600017FF1 /* texMapper.vsh in Sources */,
+				BD16C7A511ACE5E000ECD48F /* Water.m in Sources */,
+				BD16C7DD11ACE96000ECD48F /* Texture.m in Sources */,
+				BD7F62B911B010EE003507BA /* Program.m in Sources */,
+				BD12EA8111B030390081DED2 /* SkyBox.m in Sources */,
+				BD7F179511B44FCE0046DF9B /* TerrainTemplatePickerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ohad Eder Pressman (K336KV5B85)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iTerrain_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "iTerrain-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = Terrain;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B7A19F74-795A-427D-A653-DD9203047BD6";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ohad Eder Pressman (K336KV5B85)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iTerrain_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "iTerrain-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = Terrain;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B7A19F74-795A-427D-A653-DD9203047BD6";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD114DE211F33F0D00FB351B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		BD114DE311F33F0D00FB351B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ohad Eder Pressman (K336KV5B85)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iTerrain_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "iTerrain-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = Terrain;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B7A19F74-795A-427D-A653-DD9203047BD6";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iTerrain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				BD114DE311F33F0D00FB351B /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iTerrain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				BD114DE211F33F0D00FB351B /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
